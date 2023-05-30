@@ -1,0 +1,86 @@
+.backgroundVideo {
+  background-size: cover;
+  z-index: -1;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+.header {
+  height: 80px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+
+.header .title {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.videoContainer {
+  position: relative;
+  width: 50vw;
+  margin: 20px;
+  margin: 0 auto;
+}
+
+.video {
+  position: absolute;
+  text-align: center;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  height: auto;
+}
+
+.canvas {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  scale: 2;
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    flex-direction: column;
+  }
+  .videoContainer {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .video {
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .canvas {
+    max-height: 300px;
+    width: auto;
+    margin: 0 auto;
+  }
+}

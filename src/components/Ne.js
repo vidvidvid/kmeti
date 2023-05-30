@@ -1,31 +1,49 @@
 import React from "react";
 import Navigacija from "./Navigacija";
 import scrolling_text_2 from "../img/scrolling_text_2.gif";
-import ne_veselica from "../img/ne_veselica.png";
+import Test from "./Test";
+import video from "../video/veselica.mp4";
 
 function Ne() {
   return (
     <div>
       <Navigacija />
       <div className='ne'>
-        <div className='ne_top'>
-          <img
-            src={scrolling_text_2}
-            alt='Scrolling Text'
-            style={{ width: "100%" }}
-          />
-        </div>
-        <div className='ne_bottom'>
-          <img
-            src={scrolling_text_2}
-            alt='Scrolling Text'
-            style={{ width: "100%" }}
-          />
-        </div>
+        <img
+          className='ne_top'
+          src={scrolling_text_2}
+          alt='Scrolling Text'
+          style={{ width: "100%" }}
+        />
+        <img
+          className='ne_bottom'
+          src={scrolling_text_2}
+          alt='Scrolling Text'
+          style={{ width: "100%" }}
+        />
       </div>
 
-      <div>
-        <img src={ne_veselica} alt='Ne Veselica' style={{ width: "100%" }} />
+      <video
+        autoPlay
+        loop
+        muted
+        src={video}
+        style={{
+          position: "absolute",
+          left: 0,
+          width: "100%",
+        }}
+      />
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: 30,
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        <Test />
       </div>
     </div>
   );

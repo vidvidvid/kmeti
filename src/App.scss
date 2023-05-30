@@ -1,0 +1,247 @@
+a {
+  color: blueviolet;
+}
+
+.kravice_video {
+  position: relative;
+  z-index: -1;
+}
+
+html,
+body {
+  position: relative;
+  text-align: center;
+  background-color: #d1d1d1;
+  color: #000000;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+  line-height: 200%;
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid blue;
+  border-right: 2px solid blue;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+h1,
+h2 {
+  font-size: 100%;
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+}
+
+#tagline {
+  color: blue;
+}
+
+.important {
+  color: rgb(0, 221, 255);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.Video01 {
+  position: relative;
+}
+
+.NavBar {
+  position: absolute;
+  z-index: 4;
+}
+
+.Nav01 {
+  display: block;
+  background-color: #000000;
+  width: 200px;
+  height: 35px;
+  line-height: 108%;
+  text-align: left;
+  color: yellow;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.Nav02 {
+  display: none;
+  background-color: #42210b;
+  width: 200px;
+  height: 80px;
+  line-height: 108%;
+  text-align: left;
+  color: yellow;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-bottom: 16px;
+}
+
+.Nav03 {
+  display: block;
+  background-color: #a3a3a3;
+  width: 200px;
+  height: 17px;
+  line-height: 108%;
+  text-align: left;
+  color: yellow;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.anketa {
+  position: absolute;
+  margin-left: 35%;
+  margin-right: 30%;
+  margin-top: 25%;
+}
+
+.anketa01 {
+  background-color: #a3a3a3;
+  color: #0000ff;
+  width: 300px;
+  height: 35px;
+  text-align: left;
+  line-height: 108%;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.anketa02 {
+  background-color: #a3a3a3;
+  color: #0000ff;
+  width: 145px;
+  height: 15px;
+  text-align: left;
+  line-height: 108%;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.anketa03 {
+  background-color: #a3a3a3;
+  color: #0000ff;
+  width: 145px;
+  height: 15px;
+  text-align: left;
+  line-height: 108%;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+.da {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.da_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.da_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.ne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ne_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.ne_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.celostna_podoba {
+  position: relative;
+}
+
+.celostna_podoba01 {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  margin-top: 2%;
+  margin-left: 30%;
+}
+
+.celostna_podoba01tekst {
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.celostna_podoba01img {
+  height: 400px;
+  width: 200px;
+}
+
+.celostna_podoba02 {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  margin-top: 17%;
+  margin-left: 55%;
+}
+
+.celostna_podoba02img {
+  height: 300px;
+  width: 200px;
+}
+
+.celostna_podoba03 {
+  position: absolute;
+  width: 100%;
+  height: 1080px;
+  margin-top: 25%;
+  margin-left: 10%;
+}
+
+.celostna_podoba03tekst {
+  color: rgb(0, 0, 0);
+  text-align: left;
+}
+
+.celostna_podoba03img {
+  height: 300px;
+  width: 200px;
+}
+
+.knjiga_pohval_in_pritožb {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.link {
+  color: yellow;
+}
+
+.link2 {
+  color: #0000ff;
+}

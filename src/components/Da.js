@@ -1,7 +1,8 @@
 import React from "react";
 import Navigacija from "./Navigacija";
 import scrolling_text from "../img/scrolling_text.gif";
-import da_protest from "../img/da_protest.png";
+import Test from "./Test";
+import video from "../video/kmetje.mp4";
 
 function Da() {
   return (
@@ -23,8 +24,27 @@ function Da() {
         />
       </div>
 
-      <div>
-        <img src={da_protest} alt='DA Protest' style={{ width: "100%" }} />
+      <video
+        autoPlay
+        loop
+        muted
+        src={video}
+        style={{
+          position: "absolute",
+          left: 0,
+          width: "100%",
+        }}
+      />
+
+      <div
+        style={{
+          position: "absolute",
+          bottom: 30,
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        <Test />
       </div>
     </div>
   );
