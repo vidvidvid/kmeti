@@ -1,15 +1,8 @@
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 const Navigacija = () => {
-  const hideElement = () => {
-    const object = document.getElementById("hid");
-    console.log("WAU");
-    if (object.style.display === "none") {
-      object.style.display = "block";
-    } else {
-      object.style.display = "none";
-    }
-  };
+  const [isHidden, setIsHidden] = useState(false);
 
   return (
     <div className='NavBar'>
@@ -18,7 +11,13 @@ const Navigacija = () => {
         <br />
         Hana Jelovšek
       </div>
-      <div id='hid' className='Nav02'>
+      <div
+        id='hid'
+        className='Nav02'
+        style={{
+          display: isHidden ? "block" : "none",
+        }}
+      >
         <Link className='link' to='/'>
           anketa
         </Link>
@@ -39,7 +38,7 @@ const Navigacija = () => {
           knjiga pohval in pritožb
         </Link>
       </div>
-      <div onClick={hideElement} className='Nav03'>
+      <div onClick={setIsHidden} className='Nav03'>
         meni
       </div>
     </div>
