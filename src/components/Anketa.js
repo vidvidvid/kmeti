@@ -1,10 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import kraviceAudio from "../audio/kravice_audio.mp3";
 import kraviceVideo from "../video/kravice.mp4";
 import Navigacija from "./Navigacija";
 
 function Anketa() {
+  const [audioPlaying, setAudioPlaying] = useState(false);
+
+  const handlePlayAudio = () => {
+    const audio = document.querySelector("audio");
+    if (audio) {
+      audio.play();
+      setAudioPlaying(true);
+    }
+  };
+
   return (
     <div>
       <Navigacija />
@@ -32,9 +42,15 @@ function Anketa() {
         </video>
       </div>
 
-      <audio autoPlay>
+      <audio>
         <source src={kraviceAudio} />
       </audio>
+
+      {!audioPlaying && (
+        <div className='audio-overlay'>
+          <button onClick={handlePlayAudio}>Vstopi</button>
+        </div>
+      )}
     </div>
   );
 }

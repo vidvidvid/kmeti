@@ -6,7 +6,7 @@ import * as bodyPix from "@tensorflow-models/body-pix";
 import Webcam from "react-webcam";
 import styles from "./test.scss";
 
-function Test() {
+function WebcamComponent() {
   const canvasRef = useRef(null);
   const webcamRef = useRef(null);
   const [bodypixnet, setBodypixnet] = useState();
@@ -90,14 +90,6 @@ function Test() {
     }
   };
 
-  // useEffect(() => {
-  //   return () => {
-  //     if (animationId) {
-  //       cancelAnimationFrame(animationId);
-  //     }
-  //   };
-  // }, []);
-
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -128,4 +120,4 @@ function Test() {
   );
 }
 
-export default Test;
+export default WebcamComponent;

@@ -1,7 +1,7 @@
 import React from "react";
 import Navigacija from "./Navigacija";
 import scrolling_text_2 from "../img/scrolling_text_2.gif";
-import Test from "./Test";
+import Test from "./Webcam";
 import video from "../video/veselica.mp4";
 
 function Ne() {

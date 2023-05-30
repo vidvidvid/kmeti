@@ -1,7 +1,7 @@
 import React from "react";
 import Navigacija from "./Navigacija";
 import scrolling_text from "../img/scrolling_text.gif";
-import Test from "./Test";
+import Test from "./Webcam";
 import video from "../video/kmetje.mp4";
 
 function Da() {
