@@ -38,7 +38,7 @@ const Navigacija = () => {
           knjiga pohval in pritožb
         </Link>
       </div>
-      <div onClick={setIsHidden} className='Nav03'>
+      <div onClick={() => setIsHidden(!isHidden)} className='Nav03'>
         meni
       </div>
     </div>
