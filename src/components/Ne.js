@@ -1,62 +1,23 @@
 import React from "react";
-import "./main.css";
+import Navigacija from "./Navigacija";
+import scrolling_text_2 from "../img/scrolling_text_2.gif";
+import ne_veselica from "../img/ne_veselica.png";
 
 function Ne() {
-  const hideElement = () => {
-    const object = document.getElementById("hid");
-    console.log("WAU");
-    if (object.style.display === "none") {
-      object.style.display = "block";
-    } else {
-      object.style.display = "none";
-    }
-  };
-
   return (
     <div>
-      <div className='NavBar'>
-        <div className='Nav01'>
-          analogne in digitalne
-          <br />
-          Hana Jelovšek
-        </div>
-        <div id='hid' className='Nav02'>
-          <a className='link' href='index.html'>
-            anketa
-          </a>
-          <br />
-          <a className='link' href='CelostnaPodoba.html'>
-            celostna podoba
-          </a>
-          <br />
-          <a className='link' href='animacija.html'>
-            animacija
-          </a>
-          <br />
-          <a className='link' href='objekt.html'>
-            objekt
-          </a>
-          <br />
-          <a className='link' href='knjiga_pohval_in_pritožb.html'>
-            knjiga pohval in pritožb
-          </a>
-        </div>
-        <div onClick={hideElement} className='Nav03'>
-          meni
-        </div>
-      </div>
-
+      <Navigacija />
       <div className='ne'>
         <div className='ne_top'>
           <img
-            src='img/scrolling_text_2.gif'
+            src={scrolling_text_2}
             alt='Scrolling Text'
             style={{ width: "100%" }}
           />
         </div>
         <div className='ne_bottom'>
           <img
-            src='img/scrolling_text_2.gif'
+            src={scrolling_text_2}
             alt='Scrolling Text'
             style={{ width: "100%" }}
           />
@@ -64,11 +25,7 @@ function Ne() {
       </div>
 
       <div>
-        <img
-          src='img/ne_veselica.png'
-          alt='Ne Veselica'
-          style={{ width: "100%" }}
-        />
+        <img src={ne_veselica} alt='Ne Veselica' style={{ width: "100%" }} />
       </div>
     </div>
   );
