@@ -150,13 +150,15 @@ body::-webkit-scrollbar {
 }
 
 .da_top {
-  position: relative;
-  margin-top: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .da_bottom {
-  position: relative;
-  margin-bottom: 52%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .ne {

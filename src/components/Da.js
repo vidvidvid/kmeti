@@ -9,20 +9,18 @@ function Da() {
       <Navigacija />
 
       <div className='da'>
-        <div className='da_top'>
-          <img
-            src={scrolling_text}
-            alt='Scrolling Text'
-            style={{ width: "100%" }}
-          />
-        </div>
-        <div className='da_bottom'>
-          <img
-            src={scrolling_text}
-            alt='Scrolling Text'
-            style={{ width: "100%" }}
-          />
-        </div>
+        <img
+          className='da_top'
+          src={scrolling_text}
+          alt='Scrolling Text'
+          style={{ width: "100%" }}
+        />
+        <img
+          className='da_bottom'
+          src={scrolling_text}
+          alt='Scrolling Text'
+          style={{ width: "100%" }}
+        />
       </div>
 
       <div>
